@@ -5,4 +5,6 @@ d = { 'settings': { 'branch': 'master',
                 'doc_host': 'https://tonirodriguez.github.io',
                 'git_url': 'https://github.com/tonirodriguez/build_noticias_dataset',
                 'lib_path': 'build_noticias_dataset'},
-  'syms': {'build_noticias_dataset.core': {'build_noticias_dataset.core.foo': ('core.html#foo', 'build_noticias_dataset/core.py')}}}
+  'syms': { 'build_noticias_dataset.core': { 'build_noticias_dataset.core.ddg': ('core.html#ddg', 'build_noticias_dataset/core.py'),
+                                             'build_noticias_dataset.core.ddg_news': ( 'core.html#ddg_news',
+                                                                                       'build_noticias_dataset/core.py')}}}
