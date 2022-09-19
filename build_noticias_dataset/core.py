@@ -3,11 +3,11 @@
 # %% auto 0
 __all__ = ['keywords', 'r', 'results', 'ddg_news', 'ddg']
 
-# %% ../00_core.ipynb 3
+# %% ../00_core.ipynb 4
 from duckduckgo_search import ddg
 from duckduckgo_search import ddg_news
 
-# %% ../00_core.ipynb 4
+# %% ../00_core.ipynb 5
 def ddg_news(keywords, region='wt-wt', safesearch='Moderate', time=None, max_results=25, output=None):
     """DuckDuckGo news search
 
@@ -23,12 +23,12 @@ def ddg_news(keywords, region='wt-wt', safesearch='Moderate', time=None, max_res
         DuckDuckGo news search results.
     """
 
-# %% ../00_core.ipynb 5
+# %% ../00_core.ipynb 6
 keywords = "russia invasion ukraine"
 r = ddg_news(keywords, region='wt-wt', safesearch='Off', time='d', max_results=100)
 print(r)
 
-# %% ../00_core.ipynb 6
+# %% ../00_core.ipynb 7
 def ddg(keywords, region='wt-wt', safesearch='Moderate', time=None, max_results=25, output=None):
     """DuckDuckGo text search. Query params: https://duckduckgo.com/params
 
@@ -44,7 +44,7 @@ def ddg(keywords, region='wt-wt', safesearch='Moderate', time=None, max_results=
         Optional[List[dict]]: DuckDuckGo text search results.
     """
 
-# %% ../00_core.ipynb 7
+# %% ../00_core.ipynb 8
 keywords = 'Bella Ciao'
 results = ddg(keywords, region='wt-wt', safesearch='Moderate', time='y', max_results=25)
 print(results)
